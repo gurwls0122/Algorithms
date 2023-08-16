@@ -1,3 +1,4 @@
+#https://www.acmicpc.net/problem/13398
 import sys
 n = int(sys.stdin.readline())
 lst = list(map(int, sys.stdin.readline().split()))
@@ -18,6 +19,4 @@ for i in range(n):
         dp.append(max(lst[i], dp[i-1]+ lst[i]))
         dp2.append(max(dp2[i-1]+lst[i], dp[i-1]))
 
-# print(dp)
-# print(dp2)
 print(max(max(dp), max(dp2)))

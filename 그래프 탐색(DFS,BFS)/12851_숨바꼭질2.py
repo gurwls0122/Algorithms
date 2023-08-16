@@ -1,3 +1,4 @@
+#https://www.acmicpc.net/problem/12851
 import sys
 from collections import deque
 N, K = map(int, sys.stdin.readline().split())
